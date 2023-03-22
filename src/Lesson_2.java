@@ -2,7 +2,8 @@ public class Lesson_2 {
     public static void main(String[] args) {
         // towerOfHanoi();
         // startRecursiveLS();
-        startRecursiveBS();
+        // startRecursiveBS();
+        startTailRecursive();
     }
 
     // TOWER OF HANOI
@@ -61,5 +62,18 @@ public class Lesson_2 {
         else return recursiveBS(arr, mid + 1, hi, n);
     }
 
-    // 
+    // TAIL RECURSION
+    public static void startTailRecursive() {
+        int n = 5;
+        System.out.println("Factorial of " + n + ": " + factorial(n));
+    }
+
+    public static int factorial(int n) {
+        return factorial(n, 1);
+    }
+
+    public static int factorial(int n, int p) {
+        if (n == 1) return p;
+        return factorial(n - 1, n * p);
+    }
 }
