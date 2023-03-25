@@ -3,7 +3,8 @@ public class Lesson_2 {
         // towerOfHanoi();
         // startRecursiveLS();
         // startRecursiveBS();
-        startTailRecursive();
+        // startTailRecursive();
+        startTRMaxNum();
     }
 
     // TOWER OF HANOI
@@ -75,5 +76,18 @@ public class Lesson_2 {
     public static int factorial(int n, int p) {
         if (n == 1) return p;
         return factorial(n - 1, n * p);
+    }
+
+    // SELF TEST 1: Implement a tail recursive function that returns the maximum element in the array 𝐴.
+    public static void startTRMaxNum() {
+        
+    }
+    
+    public static void maxNum(Integer Array[]) {
+        
+    }
+
+    public static void maxNum(Integer Array[], int k) {
+        
     }
 }
