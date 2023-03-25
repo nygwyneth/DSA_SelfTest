@@ -80,14 +80,16 @@ public class Lesson_2 {
 
     // SELF TEST 1: Implement a tail recursive function that returns the maximum element in the array 𝐴.
     public static void startTRMaxNum() {
-        
+        int[] array = {26, 9, 2, 3, 1, 8, 100, 23, 32, 91};
+        System.out.println("Maximum Number: " + maxNum(array));
     }
     
-    public static void maxNum(Integer Array[]) {
-        
-    }
+    public static int maxNum(int array[]) {
+        int maxNum = 0;
 
-    public static void maxNum(Integer Array[], int k) {
-        
+        for (int i = 0; i < array.length; i++) {
+            if (maxNum < array[i]) maxNum = array[i];
+        }
+        return maxNum;
     }
 }
